@@ -17,8 +17,8 @@ export class JobListComponent implements OnInit {
     }
     ngOnInit() {
         this.jobService.getJobs().subscribe(j => {
-            this.jobList = j;
-            this.storageService.setJobs(j);
+            this.jobList = j['body'];
+            this.storageService.setJobs(j['body']);
             this.applyFilter('state', 'active');
         });
     }

@@ -11,7 +11,7 @@ import { StorageService } from 'src/app/core/storage/storage.service';
 export class JobService {
   baseUrl = '';
   constructor(protected http: HttpClient) {
-    this.baseUrl = `${environment.api}/job`;
+    this.baseUrl = `${environment.api}/jobs`;
   }
 
   public getJobs(): Observable<Job[]> {

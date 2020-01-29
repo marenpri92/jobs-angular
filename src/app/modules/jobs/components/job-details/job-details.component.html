@@ -1,14 +1,15 @@
 <mat-card *ngIf="job" class="card-content mat-elevation-z8">
     <mat-card-header fxLayout="column" fxLayoutAlign="center" fxFlexFill>
         <div fxFlex="50">
-            <img *ngIf="job.thumbnail" class="logo-large" src="https:{{job.thumbnail}}" alt="Logo">
+            <img data-test-thumbnail="testthumbnail" *ngIf="job.thumbnail" class="logo-large"
+                src="https:{{job.thumbnail}}" alt="Logo">
             <mat-icon *ngIf="!job.thumbnail">business</mat-icon>
-            <mat-card-title>{{job.title}}</mat-card-title>
-            <mat-card-subtitle>{{job.city}}</mat-card-subtitle>
+            <mat-card-title data-test-title="testtitle">{{job.title}}</mat-card-title>
+            <mat-card-subtitle data-test-city="testcity">{{job.city}}</mat-card-subtitle>
         </div>
     </mat-card-header>
     <mat-card-content>
-        <p class="description">
+        <p class="description" data-test-description="testdescription">
             {{job.description}}
         </p>
     </mat-card-content>
