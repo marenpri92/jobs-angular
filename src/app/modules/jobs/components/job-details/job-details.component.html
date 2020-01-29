@@ -14,4 +14,4 @@
         </p>
     </mat-card-content>
 </mat-card>
-<app-error *ngIf="!job"></app-error>
+<div *ngIf="!job" class="empty-box">Select an item from the list first</div>

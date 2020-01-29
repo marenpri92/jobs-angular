@@ -24,4 +24,7 @@ export class JobListComponent implements OnInit {
     applyFilter(filter: string, filterValue: string) {
         this.jobList = this.jobList.filter(job => job[filter] === filterValue);
     }
+    setTab(){
+        this.storageService.setTab(1);
+    }
 }

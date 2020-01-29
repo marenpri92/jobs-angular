@@ -12,13 +12,20 @@ export class StorageService {
   private jobsList: BehaviorSubject<Job[]> = new BehaviorSubject([]);
   jobs = this.jobsList.asObservable();
   // jobs end
-
+  private activeTab: BehaviorSubject<number> = new BehaviorSubject(0);
+  tab = this.activeTab.asObservable();
   // methods
   getJobs() {
     return this.jobsList.value;
   }
   setJobs(jobs: Job[]) {
     this.jobsList.next(jobs);
+  }
+  getTab() {
+    return this.activeTab.value;
+  }
+  setTab(tab: number) {
+    this.activeTab.next(tab);
   }
 
   constructor() { }
