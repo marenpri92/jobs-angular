@@ -1,9 +1,10 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { JobDetailsComponent } from './job-details.component';
+import { JobsComponent } from './jobs.component';
 import { SharedModule } from '../../../../modules/shared/shared.module';
+import { JobTabsComponent } from '../job-tabs/job-tabs.component';
 
-describe('JobDetailsComponent', () => {
+describe('JobsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -11,13 +12,14 @@ describe('JobDetailsComponent', () => {
         SharedModule
       ],
       declarations: [
-        JobDetailsComponent,
+        JobsComponent,
+        JobTabsComponent
       ],
     }).compileComponents();
   }));
 
-  it('should create the job details', () => {
-    const fixture = TestBed.createComponent(JobDetailsComponent);
+  it('should create the jobs component', () => {
+    const fixture = TestBed.createComponent(JobsComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
