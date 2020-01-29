@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
     selector: 'app-jobs',
     templateUrl: 'jobs.component.html',
 })
-
 export class JobsComponent { }

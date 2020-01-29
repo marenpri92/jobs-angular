@@ -1,9 +1,9 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { JobDetailsComponent } from './job-details.component';
 import { SharedModule } from '../../../../modules/shared/shared.module';
-import { Job } from 'src/app/core/models/job.model';
-import { DebugElement } from '@angular/core';
+import { Job } from '../../../../core/models/job.model';
 
 describe('JobDetailsComponent', () => {
   let component: JobDetailsComponent;

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 import { Job } from '../models/job.model';
-import { JobService } from 'src/app/modules/jobs/jobs.service';
 
 @Injectable({
   providedIn: 'root'
@@ -23,8 +22,5 @@ export class StorageService {
   }
 
   constructor() { }
-
-  init() {
-    console.log('lista store', this.jobs);
-  }
+  init() { }
 }

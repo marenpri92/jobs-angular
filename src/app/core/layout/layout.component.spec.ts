@@ -1,7 +1,8 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { LayoutComponent } from './layout.component';
-import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { SharedModule } from '../../modules/shared/shared.module';
 
 describe('LayoutComponent', () => {
   let component: LayoutComponent;

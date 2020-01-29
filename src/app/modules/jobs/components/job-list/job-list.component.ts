@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { JobService } from '../../jobs.service';
-import { Job } from 'src/app/core/models/job.model';
-import { StorageService } from 'src/app/core/storage/storage.service';
+import { Job } from '../../../../core/models/job.model';
+import { StorageService } from '../../../../core/storage/storage.service';
 
 @Component({
     selector: 'app-job-list',
@@ -12,9 +13,7 @@ export class JobListComponent implements OnInit {
     displayedColumns: string[] = ['thumbnail', 'title', 'arrow'];
     jobList: Job[] = [];
 
-    constructor(private jobService: JobService, private storageService: StorageService) {
-
-    }
+    constructor(private jobService: JobService, private storageService: StorageService) { }
     ngOnInit() {
         this.jobService.getJobs().subscribe(j => {
             this.jobList = j['body'];

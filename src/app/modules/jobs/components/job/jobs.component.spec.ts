@@ -1,5 +1,6 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { JobsComponent } from './jobs.component';
 import { SharedModule } from '../../../../modules/shared/shared.module';
 import { JobTabsComponent } from '../job-tabs/job-tabs.component';
