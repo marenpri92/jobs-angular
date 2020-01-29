@@ -1,9 +1,9 @@
 <nav mat-tab-nav-bar  animationDuration="2000ms">
-    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive [routerLinkActiveOptions]="{ exact: true }" #rla="routerLinkActive"
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" 
+    routerLinkActive [routerLinkActiveOptions]="{ exact: true }" #rla="routerLinkActive"
+    
         [active]="rla.isActive">
         {{link.label}}
     </a>
-    <!-- <mat-tab label="Jobs list"> <app-job-list></app-job-list> </mat-tab>
-        <mat-tab label="Job details"> <app-job-details></app-job-details> </mat-tab> -->
 </nav>
 <router-outlet></router-outlet>

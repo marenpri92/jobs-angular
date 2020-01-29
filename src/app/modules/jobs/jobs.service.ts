@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { Observable } from 'rxjs';
 import { Job } from '../../core/models/job.model';
+import { StorageService } from 'src/app/core/storage/storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class JobService {
     this.baseUrl = `${environment.api}/job`;
   }
 
-  public getJob(): Observable<Job[]> {
+  public getJobs(): Observable<Job[]> {
     return this.http.get<Job[]>(this.baseUrl);
   }
 }

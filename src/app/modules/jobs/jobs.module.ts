@@ -6,6 +6,7 @@ import { MaterialModule } from '../shared/material/material.module';
 import { JobListComponent } from './components/job-list/job-list.component';
 import { JobTabsComponent } from './components/job-tabs/job-tabs.component';
 import { JobDetailsComponent } from './components/job-details/job-details.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -19,7 +20,7 @@ import { JobDetailsComponent } from './components/job-details/job-details.compon
   imports: [
     CommonModule,
     JobsRoutingModule,
-    MaterialModule
+    SharedModule
   ],
   exports: [
     JobsComponent

@@ -1,0 +1,13 @@
+.mat-table {
+    width: 100%;
+    margin: 10px 0;
+    tr.mat-row:hover {
+        background: #3f51b55c;
+        cursor: pointer;
+    }
+}
+.logo-small{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}

@@ -9,9 +9,11 @@ import { Component } from '@angular/core';
 export class JobTabsComponent {
     navLinks = [{
         path: '/job',
-        label: 'Jobs list'
+        label: 'Jobs list',
+        disabled: false
     }, {
-        path: '5',
-        label: 'Job details'
+        path: ':id',
+        label: 'Job details',
+        disabled: true
     }];
 }
