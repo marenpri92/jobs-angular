@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {
   MatGridListModule,
   MatCardModule,
+  MatTabsModule,
   // MatAutocompleteModule,
   // MatButtonModule,
   // MatButtonToggleModule,
@@ -28,7 +29,6 @@ import {
   // MatSnackBarModule,
   // MatSortModule,
   // MatTableModule,
-  // MatTabsModule,
   // MatToolbarModule,
   // MatTooltipModule,
   // MatStepperModule,
@@ -44,6 +44,7 @@ import {
   exports: [
     MatGridListModule,
     MatCardModule,
+    MatTabsModule,
     // MatAutocompleteModule,
     // MatButtonModule,
     // MatButtonToggleModule,
@@ -69,11 +70,12 @@ import {
     // MatSnackBarModule,
     // MatSortModule,
     // MatTableModule,
-    // MatTabsModule,
     // MatToolbarModule,
     // MatTooltipModule,
     // MatStepperModule,
     // MatTreeModule,
+  ],
+  providers: [
   ]
 })
 export class MaterialModule { }

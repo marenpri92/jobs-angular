@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './modules/core/layout/layout.component';
-import { AppComponent } from './app.component';
+import { LayoutComponent } from './core/layout/layout.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: LayoutComponent,
     children: [
       {
-        path: 'jobs', // module: Jobs
+        path: '',
+        redirectTo: 'job',
+        pathMatch: 'full'
+      },
+      {
+        path: 'job', // module: Jobs
         loadChildren: './modules/jobs/jobs.module#JobsModule',
       }
     ]

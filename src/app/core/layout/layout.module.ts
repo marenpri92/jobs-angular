@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
-import { SharedModule } from '../../shared/shared.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 @NgModule({
-  declarations: [
-    LayoutComponent
-  ],
+  declarations: [LayoutComponent],
   imports: [
     CommonModule,
+    AppRoutingModule,
     SharedModule
-  ],
-  exports: [
-    LayoutComponent
   ]
 })
 export class LayoutModule { }
